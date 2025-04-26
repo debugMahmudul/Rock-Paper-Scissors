@@ -62,13 +62,13 @@ function playGame() {
         let computerSelection = getComputerChoice();
 
         playRound(humanSelection, computerSelection);
-        console.log(humanScore);
-        console.log(computerScore);
+        console.log(`Your score is ${humanScore}`);
+        console.log(`Computer score is ${computerScore}`);
 
     }
 
     if (humanScore !== 3 || computerScore > humanScore) {
-        console.log("You lost the game! Better luck next time");
+        console.log("You lost the game! Better luck next time!");
     } else if (humanScore === 3 || computerScore < humanScore) {
         console.log("Congratulations! You won the game!");
     }
